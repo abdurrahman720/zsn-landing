@@ -7,6 +7,5 @@
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
-  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
-
+  min-height: 100vh; 
 }
