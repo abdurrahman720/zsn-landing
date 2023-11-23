@@ -2,8 +2,14 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Container from './Components/Container'
 import Navbar from './Components/Nav/Navbar'
+import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+})
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'ZSN Tech',
@@ -13,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <div className='home-bg'>
           <Container>
             <Navbar/>

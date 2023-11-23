@@ -3,9 +3,23 @@
 @tailwind utilities;
 
 .home-bg {
-  background-image: url('/images/map.jpg');
+  background-image: url('/images/map-aq.png');
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: 100%;
   background-position: center;
-  min-height: 100vh; 
+  width: 100%;
+  min-height: 100vh;
+ background-color: #3d4778;
+  position: relative;
+  overflow: visible;
+}
+
+.home-bg::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
